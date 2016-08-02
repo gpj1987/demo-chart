@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div class='chart'></div>        
+        <script src='./app.js'></script>  
+        <script>
+            var el = document.querySelector('.chart')
+            LeTVCharts.pvByMinutes(el, {
+                url: 'http://45.78.5.243:10080/report_json',
+                width: 600,
+                height: 300
+            })
+        </script>
+</body>
+</html>
